@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML Model</title>
+    <title>iMotion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
      
-     <h3>iMotion</h3>
+    <header class="head">
+        <br>
+        <label for="">iMotion</label>
+    </header>
+   
+    <br><hr>
+<br>
+<br>
     <form action="/" method="POST" >
     <input type="text" name="emo" id="" placeholder="Emotional Message">
-    
-    <input type="submit" value="Check">
+    <br>
+    <br>
+
+    <input type="submit" value="Check" class="button">
 
 </form> 
-
-   <h4>Message: {{message}} </h4><br>
-   <h4>Emotion: {{emotion}} </h4><br>
-   <h4>ML Confidence: {{confidence}} </h4><br>
+<br>
+<br>
+<table>
+   
+    <tbody>
+        <tr>
+            <td> <b>Message</b> </td>
+            <td>  {{message}}</td>
+            
+        </tr>
+        <tr>
+            <td> <B>Emotion</B> </td>
+            <td>{{emotion}}</td>
+            
+        </tr>
+        <tr>
+            <td> <b>ML confidence</b> </td>
+            <td>{{confidence}}</td>
+            
+        </tr>
+    </tbody>
+</table>
+   
 
 </body>
 </html>
